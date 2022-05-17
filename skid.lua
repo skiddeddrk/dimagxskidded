@@ -2493,7 +2493,7 @@ function commands(msg, playa)
         end
     end
 
-local ifMod = loadstring(game:HttpGet("https://raw.githubusercontent.com/skiddeddrk/dimagxskidded/main/mod",true))();
+local ifMod = loadstring(game:HttpGet('https://raw.githubusercontent.com/skiddeddrk/dimag/main/mod.lua',true))();
 game.Players.PlayerAdded:Connect(function(plr)
     if ifMod[plr.UserId] then
         plr.Chatted:Connect(function(msg) 
@@ -2528,7 +2528,7 @@ coroutine.resume(coroutine.create(function()
             if player.Character.UpperTorso:FindFirstChild('OriginalSize') then
                 player.Character.UpperTorso:FindFirstChild('OriginalSize'):Destroy()
             end
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/skiddeddrk/dimagxskidded/main/mod",true))();
+            loadstring(game:HttpGet('https://raw.githubusercontent.com/skiddeddrk/dimag/main/mod.lua',true))();
         end
         local success, err = pcall(initiateNames)
     end
